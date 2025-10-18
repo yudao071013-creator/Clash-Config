@@ -11,11 +11,11 @@
 proxy-providers:
 
   Airport-1:
-    url: "粘贴机场订阅地址"
+    url: https://rgergergergerg6555.saojc.xyz/api/v1/client/subscribe?token=b20da4f093f7f8f2cf87be52570c83c1
     type: http
     interval: 86400
     override:
-      additional-prefix: '[机场1名字]'
+      additional-prefix: 流量光机场
       skip-cert-verify: true
       udp: true
     health-check:
@@ -478,6 +478,7 @@ rule-providers:
   facebook_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/facebook.mrs" }
   twitter_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/twitter.mrs" }
   private_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/private.mrs" }
+
 
 
 
